@@ -8,7 +8,7 @@ const getCookie = (name) => {
     return cookieNameValue[1];
   }
 };
-
+// learn cookies
 const cookies = (name) => {
   const cookie = document.cookie;
   const allCookie = cookie.split(";");
