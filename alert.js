@@ -1,6 +1,6 @@
-console.log("Please understand");
+// console.log("Please understand");
 // alert("Something is coming");
-const maComing = () => {
+const motherComing = () => {
   alert("Please someone coming");
 };
 
@@ -12,4 +12,8 @@ const askPicnic = () => {
   } else {
     console.log("You have to wait.");
   }
+};
+
+const askName = () => {
+  prompt("What is your name?");
 };
