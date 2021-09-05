@@ -1,2 +1,9 @@
 const name = 15;
-document.getElementById("name");
+const student = {
+  name: "Rohim",
+  friend: "Asif",
+  job: "Business",
+  makeMovie: function (name) {
+    console.log(name);
+  },
+};
