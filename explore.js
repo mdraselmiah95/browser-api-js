@@ -7,3 +7,7 @@ const student = {
     console.log(name);
   },
 };
+
+student.makeMovie("Day Nignt");
+// document.getElementById('name');
+alert("abc");
