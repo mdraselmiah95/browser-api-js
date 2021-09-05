@@ -11,15 +11,15 @@ const addItem = () => {
   if (!name) {
     return;
   }
-  //display in the ui
+  // display in the ui
   displayProduct(name);
-  //add to local storage
+
+  // add to local storage
   addProductToCart(name);
 
   //clear
   nameField.value = "";
 };
-
 const displayProduct = (name) => {
   const ul = document.getElementById("products");
   const li = document.createElement("li");
@@ -37,12 +37,20 @@ const getCart = () => {
   }
   return cartObj;
 };
-
 const addProductToCart = (name) => {
   const cart = getCart();
-  cart[name] = 1;
+  if (cart[name]) {
+    cart[name] = cart[name] + 1;
+  } else {
+    cart[name] = 1;
+  }
   const cartStringified = JSON.stringify(cart);
   localStorage.setItem("cart", cartStringified);
-  console.log(cart);
 };
+
+const placeOrder = () => {
+  document.getElementById("products").textContent = "";
+  localStorage.removeItem("cart");
+};
+
 displayLocalStorageCart();
