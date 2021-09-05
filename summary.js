@@ -14,3 +14,6 @@ prompt("name");
 
 // sessionStorage vs localStorage
 // cookies vs sessionStorage vs localStorage
+alert("");
+confirm("are you single?");
+prompt("name");
